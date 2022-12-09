@@ -1,0 +1,32 @@
+{
+    "name": "Rcarreirao/intereasyapi",
+    "description": "Package to make easy communication for operations with Inter Banking API",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "billet",
+        "laravel",
+        "inter"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Rcarreirao\\Intereasyapi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Carreirão",
+            "email": "rodrigo.carreirao@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rcarreirao\\Intereasyapi\\Providers\\InterEasyApiServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^7.4|^8.0"
+    }
+}

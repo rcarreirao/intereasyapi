@@ -1,2 +1,2 @@
 # intereasyapi
-A package to make easy Inter Bank billet actions.
+A package to make easy to use Inter Bank  api.
