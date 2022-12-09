@@ -1,5 +1,5 @@
 {
-    "name": "Rcarreirao/intereasyapi",
+    "name": "rcarreirao/intereasyapi",
     "description": "Package to make easy communication for operations with Inter Banking API",
     "type": "library",
     "license": "MIT",
