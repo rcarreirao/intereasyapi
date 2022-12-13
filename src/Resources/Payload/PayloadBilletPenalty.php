@@ -10,8 +10,8 @@ class PayloadBilletPenalty
 
     protected string $penaltyCode;
     protected string $date;
-    protected string $tax;
-    protected string $value;
+    protected float $tax = 0;
+    protected float $value = 0;
    
     /**
      * Get the value of penaltyCode
@@ -105,8 +105,8 @@ class PayloadBilletPenalty
         return [
             "codigoMulta"   => $this->getPenaltyCode(),
             "data"          => $this->getDate(),
-            "taxa"          => $this->getTax(),
-            "valor"         => $this->getValue()
+            "taxa"          => number_format($this->getTax(), 2),
+            "valor"         => number_format($this->getValue(), 2)
         ];
     }
 

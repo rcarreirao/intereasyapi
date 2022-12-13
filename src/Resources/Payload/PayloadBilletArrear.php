@@ -10,8 +10,8 @@ class PayloadBilletArrear
 
     protected string $arrearCode;
     protected string $date;
-    protected string $tax;
-    protected string $value;
+    protected float $tax = 0;
+    protected float $value = 0;
    
     /**
      * Get the value of arrearCode
@@ -103,10 +103,11 @@ class PayloadBilletArrear
 
     public function toArray(): array{
         return [
-            "codigoMulta"   => $this->getArrearCode(),
+            "codigoMora"    => $this->getArrearCode(),
             "data"          => $this->getDate(),
-            "taxa"          => $this->getTax(),
-            "valor"         => $this->getValue()
+            "taxa"          => number_format($this->getTax(), 2),
+            "valorMora"     => number_format($this->getValue(), 2),
+            "valor"         => number_format($this->getValue(), 2)
         ];
     }
 
